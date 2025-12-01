@@ -1,5 +1,3 @@
-Template for creating and submitting MAT496 capstone project.
-
 # Overview of MAT496
 
 In this course, we have primarily learned Langgraph. This is helpful tool to build apps which can process unstructured `text`, find information we are looking for, and present the format we choose. Some specific topics we have covered are:
@@ -15,69 +13,145 @@ We also learned that Langsmith is a nice tool for debugging Langgraph codes.
 
 ------
 
-# Capstone Project objective
+## Title: News Article Bias Checker Using LangGraph
 
-The first purpose of the capstone project is to give a chance to revise all the major above listed topics. The second purpose of the capstone is to show your creativity. Think about all the problems which you can not have solved earlier, but are not possible to solve with the concepts learned in this course. For example, We can use LLM to analyse all kinds of news: sports news, financial news, political news. Another example, we can use LLMs to build a legal assistant. Pretty much anything which requires lots of reading, can be outsourced to LLMs. Let your imagination run free.
-
-
--------------------------
-
-# Project report Template
-
-## Title: [your title goes here]
+A LangGraph-powered system for detecting media bias, comparing coverage, and analyzing narratives in news articles.
 
 ## Overview
 
-[your overview goes here. My project does this that  etc]
+This project implements a News Article Bias Checker.
+The system ingests multiple news articles on the same topic, uses semantic search, RAG, and LLM-based structured analysis to detect:
+
+Political leaning / stance
+
+Sentiment toward subjects
+
+Framing differences
+
+Missing context
+
+Comparison across sources
+
+Potential ideological bias
+
+Built using LangGraph, the pipeline consists of nodes that ingest articles, embed them, retrieve related content, and produce a structured bias report.
+This project demonstrates how LLMs can analyze large amounts of text and extract meaningful insights that would be difficult to detect manually.
 
 ## Reason for picking up this project
 
-Explain how this project is aligned with this course content.
+This project is directly aligned with the major concepts covered in the course:
 
-## Video Summary Link: 
+Prompting: Bias analysis, classification, comparison prompts
 
-Make a short -  3-5 min video of yourself, put it on youtube/googledrive, and put its link in your README.md.
+Structured Output: JSON reports summarizing bias, sentiment, and framing
 
-- you can use this free tool for recording https://screenrec.com/
-- Video format should be like this:
-- your face should be visible
-- State the overall job of your agent: what inputs it takes, and what output it gives.
-- Very quickly, explain how your agent acts on the input and spits out the output. 
-- show an example run of the agent in the video
+Semantic Search: Grouping articles discussing the same event
+
+Retrieval-Augmented Generation (RAG): Ensuring the model cites from the articles
+
+Tool Calling & MCP: Optional integration for fetching live news
+
+LangGraph Concepts:
+
+State management
+
+Multi-node workflows
+
+Conditional branches (e.g., missing context detection)
+
+LangSmith: Used for debugging prompts, node behavior, and structured outputs
+
+This project also reflects how LLMs can automate tasks that require extensive reading and comparison, demonstrating a real-world application of the course concepts.
 
 
 ## Plan
 
 I plan to execute these steps to complete my project.
 
-- [TODO] Step 1 involves blah blah
-- [TODO] Step 2 involves blah blah
-- [TODO] Step 3 involves blah blah
-- ...
-- [TODO] Step n involves blah blah
+- [TODO] Step 1- Initialize LangGraph Project
+
+Create project structure
+
+Define the global graph state (articles, embeddings, clusters, analysis results)
+
+- [TODO] Step 2- Article Ingestion Node
+
+Accept text files, URLs, or raw text
+
+Clean and normalize article content
+
+Store metadata (source, date, author if available)
+
+- [TODO] Step 3- Embeddings + Vector Store Setup
+
+Convert articles into embeddings
+
+Store them in FAISS or Chroma
+
+Prepare semantic grouping logic
+- [TODO] Step 4- Semantic Grouping Node
+
+Identify which articles discuss the same event
+
+Cluster articles using vector similarity
+
+This enables cross-source comparison
+
+- [TODO] Step 5- Retrieval Node (RAG)
+
+For each cluster, retrieve relevant snippets
+
+Ground the LLM’s reasoning in actual article text
+
+- [TODO] Step 6- Bias Analysis Node
+
+Using structured prompts, extract:
+
+Source political leaning (if known)
+
+Sentiment toward key subjects
+
+Framing type (positive, negative, neutral)
+
+Mentions of loaded language or emotional framing
+
+Coverage imbalance (what some sources include/exclude)
+
+- [TODO] Step 7- Cross-Source Comparison Node
+
+Compare coverage between left, center, and right-leaning outlets
+
+Identify missing context bias
+
+Highlight narrative differences
+
+- [TODO] Step 8- Report Generation Node
+
+Output in Markdown or JSON:
+
+Summary of the event
+
+Bias score per article
+
+Coverage comparison table
+
+Key excerpts supporting each bias detection
+
+Visual indicators (optional)
+
+- [TODO] Step 9- LangSmith Debugging & Optimization
+
+Trace node execution
+
+Tune prompts for consistency and accuracy
+
+Validate structured output schemas
+
+- [TODO] Step 10- UI or CLI
+
+Build a simple user interface to upload articles and view the bias report dynamically
 
 ## Conclusion:
 
 I had planned to achieve {this this}. I think I have/have-not achieved the conclusion satisfactorily. The reason for your satisfaction/unsatisfaction.
 
-----------
-
-# Added instructions:
-
-- This is a `solo assignment`. Each of you will work alone. You are free to talk, discuss with chatgpt, but you are responsible for what you submit. Some students may be called for viva. You should be able to each and every line of work submitted by you.
-
-- `commit` History maintenance.
-  - Fork this repository and build on top of that.
-  - For every step in your plan, there has to be a commit.
-  - Change [TODO] to [DONE] in the plan, before you commit after that step. 
-  - The commit history should show decent amount of work spread into minimum two dates. 
-  - **All the commits done in one day will be rejected**. Even if you are capable of doing the whole thing in one day, refine it in two days.  
- 
- - Deadline: Dec 2nd, Tuesday 11:59 pm
-
-
-# Grading: total 25 marks
-
-- Coverage of most of topics in this class: 20
-- Creativity: 5
-  
