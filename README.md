@@ -167,5 +167,5 @@ Compare framing across different news sources
 Produce a structured, interpretable report
 
 This project demonstrates how LLMs can handle complex analytical tasks such as media bias detection, which traditionally requires extensive human reading and interpretation. Overall, the system is functional, extensible, and a strong demonstration of concepts learned throughout the course.
-I had planned to achieve {this this}. I think I have/have-not achieved the conclusion satisfactorily. The reason for your satisfaction/unsatisfaction.
+
 
