@@ -82,7 +82,7 @@ Clean and normalize article content
 
 Store metadata (source, date, author if available)
 
-- [TODO] Step 3- Embeddings + Vector Store Setup
+- [DONE] Step 3- Embeddings + Vector Store Setup
 
 Convert articles into embeddings
 
