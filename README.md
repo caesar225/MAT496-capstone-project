@@ -68,7 +68,7 @@ This project also reflects how LLMs can automate tasks that require extensive re
 
 I plan to execute these steps to complete my project.
 
-- [TODO] Step 1- Initialize LangGraph Project
+- [DONE] Step 1- Initialize LangGraph Project
 
 Create project structure
 
