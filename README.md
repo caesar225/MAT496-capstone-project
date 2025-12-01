@@ -74,7 +74,7 @@ Create project structure
 
 Define the global graph state (articles, embeddings, clusters, analysis results)
 
-- [TODO] Step 2- Article Ingestion Node
+- [DONE] Step 2- Article Ingestion Node
 
 Accept text files, URLs, or raw text
 
