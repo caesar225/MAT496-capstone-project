@@ -1,0 +1,8 @@
+langchain
+langgraph
+langchain-groq
+sentence-transformers
+faiss-cpu
+pydantic
+python-dotenv
+tiktoken
