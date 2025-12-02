@@ -97,7 +97,7 @@ Cluster articles using vector similarity
 
 This enables cross-source comparison
 
-- [TODO] Step 5- Retrieval Node (RAG)
+- [DONE] Step 5- Retrieval Node (RAG)
 
 For each cluster, retrieve relevant snippets
 
