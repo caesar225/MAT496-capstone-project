@@ -125,7 +125,7 @@ Identify missing context bias
 
 Highlight narrative differences
 
-- [TODO] Step 8- Report Generation Node
+- [DONE] Step 8- Report Generation Node
 
 Output in Markdown or JSON:
 
