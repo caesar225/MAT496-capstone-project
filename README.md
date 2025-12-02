@@ -103,7 +103,7 @@ For each cluster, retrieve relevant snippets
 
 Ground the LLM’s reasoning in actual article text
 
-- [TODO] Step 6- Bias Analysis Node
+- [DONE] Step 6- Bias Analysis Node
 
 Using structured prompts, extract:
 
