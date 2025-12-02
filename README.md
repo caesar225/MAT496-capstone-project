@@ -89,7 +89,7 @@ Convert articles into embeddings
 Store them in FAISS or Chroma
 
 Prepare semantic grouping logic
-- [TODO] Step 4- Semantic Grouping Node
+- [DONE] Step 4- Semantic Grouping Node
 
 Identify which articles discuss the same event
 
