@@ -139,15 +139,7 @@ Key excerpts supporting each bias detection
 
 Visual indicators (optional)
 
-- [TODO] Step 9- LangSmith Debugging & Optimization
-
-Trace node execution
-
-Tune prompts for consistency and accuracy
-
-Validate structured output schemas
-
-- [TODO] Step 10- UI or CLI
+- [TODO] Step 9- UI or CLI
 
 Build a simple user interface to upload articles and view the bias report dynamically
 
