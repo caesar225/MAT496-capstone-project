@@ -59,8 +59,6 @@ Multi-node workflows
 
 Conditional branches (e.g., missing context detection)
 
-LangSmith: Used for debugging prompts, node behavior, and structured outputs
-
 This project also reflects how LLMs can automate tasks that require extensive reading and comparison, demonstrating a real-world application of the course concepts.
 
 
