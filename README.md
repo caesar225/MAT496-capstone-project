@@ -117,7 +117,7 @@ Mentions of loaded language or emotional framing
 
 Coverage imbalance (what some sources include/exclude)
 
-- [TODO] Step 7- Cross-Source Comparison Node
+- [DONE] Step 7- Cross-Source Comparison Node
 
 Compare coverage between left, center, and right-leaning outlets
 
