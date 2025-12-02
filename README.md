@@ -141,6 +141,30 @@ Visual indicators (optional)
 
 Build a simple user interface to upload articles and view the bias report dynamically
 
+# How to run the Project: 
+
+1) Install dependencies: pip install -r requirements.txt
+2) Run the program: python main.py
+
+# How to provide input:
+
+The News Bias Checker supports interactive input from the command line.
+When you run the program, you can choose between:
+
+Option 1 — Paste Article Text Manually
+
+You will be prompted to paste any number of articles directly into the terminal.
+
+Option 2 — Provide File Paths
+
+You can supply .txt files that contain the articles.
+
+Example files may look like:
+data/article1.txt
+data/article2.txt
+
+Once processing is done, you’ll see a final report.
+
 ## Conclusion:
 
 The goal of this project was to build a complete Bias Checker System using concepts from the course: prompting, structured output, semantic search, RAG, tool calling, and LangGraph workflows.
